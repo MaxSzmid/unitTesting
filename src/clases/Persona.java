@@ -66,7 +66,6 @@ public class Persona {
     }
 
     public float multiplicarEdad(float multiplicar) {
-        System.out.println(this.edad + "  "+ (float)this.edad / multiplicar + "  "+multiplicar);
         this.historialEdad.add(String.format("Multiplicacion: Edad Actual %d, Edad anterior %f, Edad mulpiplicada: %f", this.edad, (this.edad / multiplicar), multiplicar));
         return this.edad * multiplicar;
 

@@ -26,7 +26,6 @@ public class Cliente extends Persona {
         this.razonSocial = razonSocial;
     }
 
-    @Override
     public String toString() {
         return "Cliente{" +
                 "numeroCliente=" + numeroCliente +
