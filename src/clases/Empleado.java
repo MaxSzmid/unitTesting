@@ -2,13 +2,15 @@ package clases;
 
 public class Empleado extends Persona {
 
-    int numeroEmpleado = 0;
-    String cargo;
+    private int numeroEmpleado = 0;
+    private String cargo;
+    private Double salario;
 
-    public Empleado(String nombre, int edad, int numeroEmpleado, String cargo) {
+    public Empleado(String nombre, int edad, int numeroEmpleado, String cargo, Double salario) {
         super(nombre, edad);
         this.numeroEmpleado = numeroEmpleado;
         this.cargo = cargo;
+        this.salario = salario;
     }
 
     public int getNumeroEmpleado() {
@@ -27,6 +29,13 @@ public class Empleado extends Persona {
         this.cargo = cargo;
     }
 
+    public Double getSalario() {
+        return salario;
+    }
+
+    public void setSalario(Double salario) {
+        this.salario = salario;
+    }
 
     public String toString() {
         return "Empleado{" +
@@ -34,6 +43,4 @@ public class Empleado extends Persona {
                 ", cargo='" + cargo + '\'' +
                 '}';
     }
-
-
 }
