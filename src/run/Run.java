@@ -16,8 +16,7 @@ public class Run {
         Encargado encargado = new Encargado("Miriam", 42, 3, "Encargada de finanzas",
                 500.00, "Administracion");
 
-        encargado.generarInforme("Financiero", "Las ventas ban de maravilla");
-        System.out.println();
+        encargado.generarInforme("Financiero", "Las ventas van de maravilla");
         encargado.generarIncrementoSalarial(empleado, 100.00);
         encargado.generarIncrementoSalarial(encargado, 200.00);
         System.out.println("El nuevo salario del empleado es de $" + empleado.getSalario());

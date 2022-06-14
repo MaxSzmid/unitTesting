@@ -41,7 +41,6 @@ public class Persona {
 
 
     public void imprimirHistorialEdad() {
-        System.out.println(this.historialEdad);
         for (String historial : this.historialEdad) {
             System.out.println(historial);
         }
