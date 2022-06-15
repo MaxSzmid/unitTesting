@@ -1,6 +1,6 @@
 package clases;
 
-public class Encargado extends Empleado implements Informes{
+public class Encargado extends Empleado implements Informes {
     private String area;
 
 
@@ -18,14 +18,14 @@ public class Encargado extends Empleado implements Informes{
     }
 
     @Override
-    public void generarInforme(String tipo,String texto) {
-        System.out.println(" Tipo de informe: " + tipo + "\n" + "Contenido: " + texto);
+    public String generarInforme(String tipo, String texto) {
+        return "Tipo de informe: " + tipo  + " Contenido: " + texto;
     }
 
     @Override
     public void generarIncrementoSalarial(Empleado empleado, double incremento) {
-            double nuevoSalario = Informes.incrementoBase + incremento + empleado.getSalario();
-            empleado.setSalario(nuevoSalario);
+        double nuevoSalario = Informes.incrementoBase + incremento + empleado.getSalario();
+        empleado.setSalario(nuevoSalario);
     }
 
 
